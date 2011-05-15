@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DF0525313807C9F002814BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF0525213807C9F002814BC /* UIKit.framework */; };
+		6DF0525513807C9F002814BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF0525413807C9F002814BC /* Foundation.framework */; };
+		6DF0525713807C9F002814BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF0525613807C9F002814BC /* CoreGraphics.framework */; };
+		6DF0525B13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 6DF0525A13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h */; };
+		6DF0525D13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0525C13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m */; };
+		6DF0526013807C9F002814BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0525F13807C9F002814BC /* main.m */; };
+		6DF0526713807C9F002814BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DF0526513807C9F002814BC /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DF0524E13807C9F002814BC /* SpanishandEnglishVocabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpanishandEnglishVocabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF0525213807C9F002814BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DF0525413807C9F002814BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DF0525613807C9F002814BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6DF0525A13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpanishandEnglishVocabAppAppDelegate.h; path = Classes/SpanishandEnglishVocabAppAppDelegate.h; sourceTree = "<group>"; };
+		6DF0525C13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SpanishandEnglishVocabAppAppDelegate.m; path = Classes/SpanishandEnglishVocabAppAppDelegate.m; sourceTree = "<group>"; };
+		6DF0525F13807C9F002814BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DF0526113807C9F002814BC /* SpanishandEnglishVocabApp-Prefix.pch */ = {isa = PBXFileReference; path = "SpanishandEnglishVocabApp-Prefix.pch"; sourceTree = "<group>"; };
+		6DF0526313807C9F002814BC /* SpanishandEnglishVocabApp-Info.plist */ = {isa = PBXFileReference; path = "SpanishandEnglishVocabApp-Info.plist"; sourceTree = "<group>"; };
+		6DF0526613807C9F002814BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Languages/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DF0524B13807C9F002814BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF0525313807C9F002814BC /* UIKit.framework in Frameworks */,
+				6DF0525513807C9F002814BC /* Foundation.framework in Frameworks */,
+				6DF0525713807C9F002814BC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DF0524313807C9F002814BC = {
+			isa = PBXGroup;
+			children = (
+				6DF0525813807C9F002814BC /* SpanishandEnglishVocabApp */,
+				6DF0525113807C9F002814BC /* Frameworks */,
+				6DF0524F13807C9F002814BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DF0524F13807C9F002814BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0524E13807C9F002814BC /* SpanishandEnglishVocabApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF0525113807C9F002814BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0525213807C9F002814BC /* UIKit.framework */,
+				6DF0525413807C9F002814BC /* Foundation.framework */,
+				6DF0525613807C9F002814BC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DF0525813807C9F002814BC /* SpanishandEnglishVocabApp */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0525913807C9F002814BC /* Classes */,
+				6DF0525E13807C9F002814BC /* Other Sources */,
+				6DF0526213807C9F002814BC /* Resources */,
+				6DF0526413807C9F002814BC /* Supporting Files */,
+			);
+			path = SpanishandEnglishVocabApp;
+			sourceTree = "<group>";
+		};
+		6DF0525913807C9F002814BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0525A13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h */,
+				6DF0525C13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6DF0525E13807C9F002814BC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0525F13807C9F002814BC /* main.m */,
+				6DF0526113807C9F002814BC /* SpanishandEnglishVocabApp-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		6DF0526213807C9F002814BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0526313807C9F002814BC /* SpanishandEnglishVocabApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6DF0526413807C9F002814BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0526513807C9F002814BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DF0524D13807C9F002814BC /* SpanishandEnglishVocabApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF0526A13807C9F002814BC /* Build configuration list for PBXNativeTarget "SpanishandEnglishVocabApp" */;
+			buildPhases = (
+				6DF0524A13807C9F002814BC /* Sources */,
+				6DF0524B13807C9F002814BC /* Frameworks */,
+				6DF0524C13807C9F002814BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpanishandEnglishVocabApp;
+			productName = SpanishandEnglishVocabApp;
+			productReference = 6DF0524E13807C9F002814BC /* SpanishandEnglishVocabApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DF0524513807C9F002814BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Nick Rasband";
+			};
+			buildConfigurationList = 6DF0524813807C9F002814BC /* Build configuration list for PBXProject "SpanishandEnglishVocabApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6DF0524313807C9F002814BC;
+			productRefGroup = 6DF0524F13807C9F002814BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DF0524D13807C9F002814BC /* SpanishandEnglishVocabApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF0524C13807C9F002814BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF0525B13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h in Resources */,
+				6DF0526713807C9F002814BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DF0524A13807C9F002814BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF0525D13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m in Sources */,
+				6DF0526013807C9F002814BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DF0526513807C9F002814BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF0526613807C9F002814BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DF0526813807C9F002814BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DF0526913807C9F002814BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DF0526B13807C9F002814BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Prefix.pch";
+				INFOPLIST_FILE = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6DF0526C13807C9F002814BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Prefix.pch";
+				INFOPLIST_FILE = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DF0524813807C9F002814BC /* Build configuration list for PBXProject "SpanishandEnglishVocabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF0526813807C9F002814BC /* Debug */,
+				6DF0526913807C9F002814BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF0526A13807C9F002814BC /* Build configuration list for PBXNativeTarget "SpanishandEnglishVocabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF0526B13807C9F002814BC /* Debug */,
+				6DF0526C13807C9F002814BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DF0524513807C9F002814BC /* Project object */;
+}
