@@ -10,7 +10,7 @@
 
 #pragma mark -
 #pragma mark Private Interface
-@interface DefinitionSet ()
+@interface DefinitionSet ()<NSCopying>
 @end
 
 #pragma mark -
@@ -26,6 +26,8 @@
     
     [self setEnglish:@""];
     [self setSpanish:@""];
+    [self setEnglishExampleSentence:@""];
+    [self setSpanishExampleSentence:@""];
     [self setGender:@"N/A"];
     [self setSingularOrPlural:NA];
     [self setPartOfSpeech:@""];
@@ -47,6 +49,8 @@
     // Setup the definition set with the values passed in:
     [self setEnglish:english];
     [self setSpanish:spanish];
+    [self setEnglishExampleSentence:@""];
+    [self setSpanishExampleSentence:@""];
     [self setGender:gender];
     [self setSingularOrPlural:singularOrPlural];
     [self setPartOfSpeech:partOfSpeech];
@@ -59,6 +63,15 @@
 
 - (void) dealloc
 {
+    [_english release];
+    [_spanish release];
+    [_englishExampleSentence release];
+    [_spanishExampleSentence release];
+    [_gender release];
+    [_partOfSpeech release];
+    [_imagePath release];
+    [_audioPath release];
+    
     [super dealloc];
 }
 
@@ -67,9 +80,12 @@
 @synthesize definitionID = _definitionID;
 @synthesize english = _english;
 @synthesize spanish = _spanish;
+@synthesize englishExampleSentence = _englishExampleSentence;
+@synthesize spanishExampleSentence = _spanishExampleSentence;
 @synthesize imagePath = _imagePath; // May need to write custom setter for imagePath and audioPath to make sure they are valid file paths.
 @synthesize audioPath = _audioPath;
 @synthesize categoryID = _categoryID;
+@synthesize newFromGoogle = _newFromGoogle;
 
 // Gender property getter
 - (NSString*) gender
@@ -88,6 +104,8 @@
     else
     {
         NSLog(@"User tried to specify an invalid gender. Gender specified was %@", gender);
+        [_gender autorelease];
+        _gender = [@"N/A" retain];
     }
 }
 
@@ -107,6 +125,7 @@
     else
     {
         NSLog(@"User tried to set invalid singular or plural. Argument was %i", singularOrPlural);
+        _singularOrPlural = NA;
     }
 }
 
@@ -122,10 +141,11 @@
         [partOfSpeech isEqualToString:@"adverb"] ||
         [partOfSpeech isEqualToString:@"conjunction"] ||
         [partOfSpeech isEqualToString:@"interjection"] ||
+        [partOfSpeech isEqualToString:@"N/A"] ||
         [partOfSpeech isEqualToString:@"noun"] ||
         [partOfSpeech isEqualToString:@"preposition"] ||
         [partOfSpeech isEqualToString:@"pronoun"] ||
-        [partOfSpeech isEqualToString:@"verb"] || 
+        [partOfSpeech isEqualToString:@"verb"] ||
         [partOfSpeech isEqualToString:@""])// Empty string if unknown
     {
         [_partOfSpeech autorelease];
@@ -134,14 +154,17 @@
     else
     {
         NSLog(@"User tried to specify an invalid part of speech. It was %@", partOfSpeech);
+        [_partOfSpeech autorelease];
+        _partOfSpeech = [@"" retain];
     }
 }
 
 #pragma mark -
 #pragma mark Methods
-- (NSString*) singularOrPluralToString:(int)sOrP
+- (NSString*) singularOrPluralToString
 {
     NSString* strVersion;
+    int sOrP = [self singularOrPlural];
     switch (sOrP) {
         case SINGULAR:
             strVersion = NSLocalizedString(@"Singular", @"");
@@ -181,7 +204,17 @@
             // Singular or plural
             if ([self singularOrPlural] == SINGULAR)
             {
-                articleToReturn = @"la";
+                NSRange range;
+                range.location = 0;
+                range.length = 1;
+                if ([[[[self spanish] lowercaseString] substringWithRange:range] isEqualToString:@"a"])
+                {
+                    articleToReturn = @"el";
+                }
+                else
+                {
+                    articleToReturn = @"la";
+                }
             }
             else if ([self singularOrPlural] == PLURAL)
             {
@@ -193,17 +226,69 @@
     return articleToReturn;
 }
 
+- (int) genderIndex
+{
+    int index = 0;
+    if ([[self gender] isEqualToString:@"M"])
+    {
+        index = 0;
+    }
+    else if ([[self gender] isEqualToString:@"F"])
+    {
+        index = 1;
+    }
+    else
+    {
+        index = 2;
+    }
+    
+    return index;
+}
+
+- (int) singularPluralIndex
+{
+    int index = 0;
+    if ([self singularOrPlural] == SINGULAR)
+    {
+        index = SINGULAR;
+    }
+    else if ([self singularOrPlural] == PLURAL)
+    {
+        index = PLURAL;
+    }
+    else
+    {
+        index = NA;
+    }
+    
+    return index;
+}
+
 - (NSString*) description
 {
-	return [NSString stringWithFormat:@"Definition set: def id: %i\nenglish: %@\nspanish: %@\ngender: %@\nsingular or plural: %@\npart of speech: %@\nimage path: %@\naudio path: %@\ncategory id: %i",
+	return [NSString stringWithFormat:@"Definition set: def id: %i\nenglish: %@\nspanish: %@\nEnglish example: %@\nSpanish example: %@\ngender: %@\nsingular or plural: %@\npart of speech: %@\nimage path: %@\naudio path: %@\ncategory id: %i",
+            [self definitionID],
             [self english],
             [self spanish],
+            [self englishExampleSentence],
+            [self spanishExampleSentence],
             [self gender],
-            [self singularOrPluralToString:[self singularOrPlural]],
+            [self singularOrPluralToString],
             [self partOfSpeech],
             [self imagePath],
             [self audioPath],
             [self categoryID]];
+}
+
+// Implement the copying protocol
+- (id) copyWithZone:(NSZone *)zone
+{
+    DefinitionSet* copyOfDefSet = [[[self class] allocWithZone:zone] initWithEnglish:[self english] spanish:[self spanish] gender:[self gender] singularOrPlural:[self singularOrPlural] partOfSpeech:[self partOfSpeech] imagePath:[self imagePath] audioPath:[self audioPath] categoryID:[self categoryID]];
+    [copyOfDefSet setEnglishExampleSentence:[self englishExampleSentence]];
+    [copyOfDefSet setSpanishExampleSentence:[self spanishExampleSentence]];
+    [copyOfDefSet setNewFromGoogle:[self newFromGoogle]];
+    
+    return copyOfDefSet;
 }
 
 @end

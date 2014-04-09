@@ -29,6 +29,16 @@
     // Set image for tab bar item
     [[self tabBarItem] setImage:[UIImage imageNamed:@"manage.png"]];
     [[self navigationItem] setRightBarButtonItem:[self editButtonItem]];
+    
+    // Find out if it is iPad or iPhone and set the font appropriately.
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        [self setFontSize:30.0f];
+    }
+    else
+    {
+        [self setFontSize:17.0f];
+    }
 	
     return self;
 }
@@ -36,27 +46,16 @@
 - (void) dealloc 
 {
     [self setDelegate:nil];
+    [_definitionSet release];
+    [_categories release];
     [super dealloc];
 }
 
 #pragma mark -
 #pragma mark Accessors
 @synthesize delegate = _delegate;
-
-#pragma mark -
-#pragma mark Methods
-- (void) loadView
-{
-    // Create the primary view
-    CGRect screen = [[UIScreen mainScreen] bounds];
-    _manageView = [[[ManageView alloc] initWithFrame:screen] autorelease];
-    [self setView:_manageView];
-}
-
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return TRUE;
-}
+@synthesize definitionSet = _definitionSet;
+@synthesize fontSize = _fontSize;
 
 - (void) setCategories:(NSArray*)categories
 {
@@ -64,35 +63,61 @@
     _categories = [categories retain];
 }
 
-#pragma mark UIViewController Methods
-- (void) viewDidLoad
-{    
-    // Set this view controller as the delegate of the textfield
-    [[_manageView textField] setDelegate:self];
-    
-    // Make this class handle the button presses
-    [[_manageView button] addTarget:self action:@selector(addCategory) forControlEvents:UIControlEventTouchUpInside];
-    
-    // Need to initially get all categories.
-    UITableView* tableView = [_manageView tableView];
+- (ManageView*) contentView
+{
+    return (ManageView*)[self view];
+}
+
+#pragma mark -
+#pragma mark Methods
+- (void) loadView
+{
+    // Create the primary view
+    CGRect screen = [[UIScreen mainScreen] bounds];
+    ManageView* manageView = [[[ManageView alloc] initWithFrame:screen] autorelease];
+    [self setView:manageView];
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:FALSE];
     if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:requestAllCategories:)])
     {
         [[self delegate] manageController:self requestAllCategories:TRUE];
     }
     
+    [[[self contentView] tableView] reloadData];
+}
+
+
+
+#pragma mark UIViewController Methods
+- (void) viewDidLoad
+{    
+    // Set this view controller as the delegate of the textfield
+    [[[self contentView] textField] setDelegate:self];
+    
+    // Need to initially get all categories.
+    UITableView* tableView = [[self contentView] tableView];
+//    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:requestAllCategories:)])
+//    {
+//        [[self delegate] manageController:self requestAllCategories:TRUE];
+//    }
+    
     [tableView setDataSource:self];
     [tableView setDelegate:self];
+    //[[[self contentView] tableView] reloadData];
 }
 
 - (void) viewDidUnload
 {
-    [_manageView release];
+
 }
 
 - (void) setEditing:(BOOL)editing animated:(BOOL)animated
 {
     [super setEditing:editing animated:animated];
-    [[_manageView tableView] setEditing:editing animated:animated];
+    [[[self contentView] tableView] setEditing:editing animated:animated];
 }
 
 #pragma mark UITableViewDataSource implementation
@@ -102,6 +127,7 @@
 	WordCategory* category = [_categories objectAtIndex:[indexPath row]];
 	UITableViewCell* cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil] autorelease];
 	[[cell textLabel] setText:[category categoryName]];
+    [[cell textLabel] setFont:[UIFont systemFontOfSize:[self fontSize]]];
 	[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
     return cell;
@@ -133,14 +159,14 @@
 	if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:requestDefinitionSetsForCategory:)])
 	{
 		WordCategory* category = [_categories objectAtIndex:[indexPath row]];
-		NSLog(@"Retrieving definition sets for category #%i", [category categoryID]);
+		//NSLog(@"Retrieving definition sets for category #%i", [category categoryID]);
         
 		NSArray* definitionSets = [[self delegate] manageController:self requestDefinitionSetsForCategory:[category categoryID]];
-        DefinitionSetsController* defSetController = [[[DefinitionSetsController alloc] initWithDefinitionSets:definitionSets category:[category categoryID]] autorelease];
+        DefinitionSetsController* defSetController = [[[DefinitionSetsController alloc] initWithDefinitionSets:definitionSets category:category] autorelease];
         [defSetController setDelegate:self];
 		[[self navigationController] pushViewController:defSetController animated:TRUE];
 	}
-	[[_manageView tableView] deselectRowAtIndexPath:indexPath animated:TRUE];
+	[[[self contentView] tableView] deselectRowAtIndexPath:indexPath animated:TRUE];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -168,7 +194,7 @@
 			{
 				WordCategory* category = [_categories objectAtIndex:[indexPath row]];
 			 	[[self delegate] manageController:self moveDefinitionSetsToUnassignedFromCategory:[category categoryID]];
-				[[_manageView tableView] deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationRight];
+                [tableView reloadData];
 			}
 		}
 	}
@@ -177,27 +203,46 @@
 // Add a category to the database
 - (void) addCategory
 {
-    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:addCategoryToDatabase:)])
-    {
-        // Get the text from the text field
-        NSString* category = [[_manageView textField] text];
-        [[self delegate] manageController:self addCategoryToDatabase:category];
-    }
+    UITextField* textField = [[self contentView] textField];
     
-    UITextField* textField = [_manageView textField];
-    [textField resignFirstResponder];
-    [textField setText:@""];
-    [[_manageView tableView] reloadData];
+    if ([textField text] != nil && [[textField text] length] > 0)
+    {
+        if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:addCategoryToDatabase:)])
+        {
+            // Get the text from the text field
+            NSString* category = [[[self contentView] textField] text];
+            if (category != nil && [category length] != 0)
+            {
+                [[self delegate] manageController:self addCategoryToDatabase:category];
+                UITextField* textField = [[self contentView] textField];
+                [textField resignFirstResponder];
+                [textField setText:@""];
+                [[[self contentView] tableView] reloadData];
+            }
+        }
+    }
 }
 
 #pragma mark UITextFieldDelegate implementation
 - (BOOL)textFieldShouldReturn:(UITextField*)textField
 {
+    [self addCategory];
     [textField resignFirstResponder];
+    [textField setText:NSLocalizedString(@"Add category", @"")];
     return NO;
 }
 
 #pragma mark DefinitionSetsControllerDelegate methods
+- (int) getNextDefinitionId
+{
+    int defId = -1;
+    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(getNextDefinitionId)])
+    {
+        defId = [[self delegate] getNextDefinitionId];
+    }
+    return defId;
+}
+
 - (void) definitionSetsController:(DefinitionSetsController*)definitionSetsController deleteDefinitionSet:(int)defSetId
 {
     if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:deleteDefinitionSet:)])
@@ -206,5 +251,55 @@
     }
 }
 
+// Add a new definition set to the dictionary
+- (void) definitionSetsController:(DefinitionSetsController *)definitionSetsController addDefinitionSet:(DefinitionSet*)defSet updateDefinitionSets:(BOOL)update
+{
+    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:addDefinitionSet:updateDefinitionSets:)])
+    {
+        [[self delegate] manageController:self addDefinitionSet:defSet updateDefinitionSets:update];
+        if (update)
+        {
+            [definitionSetsController addDefinitionSetToDefinitionSets:[self definitionSet]];
+        }
+    }
+}
+
+// Update an existing definition set in the dictionary
+- (void) definitionSetsController:(DefinitionSetsController *)definitionSetsController updateDefinitionSet:(DefinitionSet*)defSet
+{
+    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:updateDefinitionSet:)])
+    {
+        [[self delegate] manageController:self updateDefinitionSet:defSet];
+    }
+}
+
+- (NSArray*) definitionSetsController:(DefinitionSetsController *)definitionSetsController retrieveCategories:(BOOL)retrieve
+{
+    return _categories;
+}
+
+- (int) definitionSetsController:(DefinitionSetsController*)definitionSetsController addCategory:(NSString*)category
+{
+    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:addCategory:)])
+    {
+        int categoryID = [[self delegate] manageController:self addCategory:category];
+        if (categoryID != -1)
+        {
+            [[[self contentView] tableView] reloadData];
+        }
+        return categoryID;
+    }
+    
+    // No delegate
+    return -1;
+}
+
+- (void) definitionSetsController:(DefinitionSetsController*)definitionSetsController renameCategory:(WordCategory*)category toName:(NSString*)catName
+{
+    if ([self delegate] != nil && [[self delegate] respondsToSelector:@selector(manageController:renameCategory:toName:)])
+    {
+        [[self delegate] manageController:self renameCategory:category toName:catName];
+    }
+}
 
 @end

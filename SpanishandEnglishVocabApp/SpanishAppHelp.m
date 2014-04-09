@@ -55,29 +55,27 @@
 }
 
 #pragma mark UIViewController Methods
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+- (BOOL) shouldAutorotate
 {
-    return TRUE;
+    return YES;
 }
-  
+
 - (void) viewDidLoad
 {	
 	NSError* error = nil;
 	
-	NSString* path = [[NSBundle mainBundle] pathForResource:@"mainhelp" ofType:@"html" inDirectory:nil];
+	NSString* path = [[NSBundle mainBundle] pathForResource:NSLocalizedString(@"mainhelp", @"") ofType:@"html" inDirectory:nil];
 	NSString* html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
-    if (error != nil)
-    {
-        NSLog(@"Error reading in html for help: %@", error);
-    }
+//    if (error != nil)
+//    {
+//        NSLog(@"Error reading in html for help: %@", error);
+//    }
 	
 	[[self contentView] loadHTMLString:html baseURL:nil];
 }
 
 - (void) viewDidUnload
 {
-    // Release the webview
-    [[self contentView] release];
 }
 
 @end

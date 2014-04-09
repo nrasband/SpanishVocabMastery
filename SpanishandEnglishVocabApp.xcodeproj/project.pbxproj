@@ -10,29 +10,57 @@
 		6D13BCBA13846B170035F398 /* DefinitionSetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D13BCB913846B170035F398 /* DefinitionSetsView.m */; };
 		6D13BCBE138472500035F398 /* WordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D13BCBD138472500035F398 /* WordController.m */; };
 		6D13BCC1138477240035F398 /* WordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D13BCC0138477240035F398 /* WordView.m */; };
+		6D2A380F13AC17C60048D346 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380813AC17C60048D346 /* Icon-72.png */; };
+		6D2A381013AC17C60048D346 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380913AC17C60048D346 /* Icon-Small-50.png */; };
+		6D2A381113AC17C60048D346 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380A13AC17C60048D346 /* Icon-Small.png */; };
+		6D2A381213AC17C60048D346 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380B13AC17C60048D346 /* Icon-Small@2x.png */; };
+		6D2A381313AC17C60048D346 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380C13AC17C60048D346 /* Icon.png */; };
+		6D2A381413AC17C60048D346 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380D13AC17C60048D346 /* Icon@2x.png */; };
+		6D2A381513AC17C60048D346 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2A380E13AC17C60048D346 /* iTunesArtwork.png */; };
 		6D307D19138386090010C909 /* DefinitionSetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D307D18138386090010C909 /* DefinitionSetsController.m */; };
 		6D5C0E6313819DEE00A25E2B /* SpanishAppHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6213819DEE00A25E2B /* SpanishAppHelp.m */; };
-		6D5C0E6B13819E5900A25E2B /* flashcards.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6413819E5900A25E2B /* flashcards.png */; };
-		6D5C0E6C13819E5900A25E2B /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6513819E5900A25E2B /* help.png */; };
 		6D5C0E6E13819E5900A25E2B /* mainhelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6713819E5900A25E2B /* mainhelp.html */; };
-		6D5C0E6F13819E5900A25E2B /* manage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6813819E5900A25E2B /* manage.png */; };
-		6D5C0E7013819E5900A25E2B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6913819E5900A25E2B /* search.png */; };
-		6D5C0E7113819E5900A25E2B /* To-do.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E6A13819E5900A25E2B /* To-do.txt */; };
 		6D5C0E741381A47C00A25E2B /* ManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5C0E731381A47C00A25E2B /* ManageController.m */; };
-		6D5C0E761381D53500A25E2B /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D5C0E751381D53500A25E2B /* Test.xib */; };
 		6D5C0E791381D7A100A25E2B /* ManageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5C0E781381D7A100A25E2B /* ManageView.m */; };
+		6D68584913918040000E69A2 /* VocabMasterySpanEngDict.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6D68584813918040000E69A2 /* VocabMasterySpanEngDict.sqlite */; };
+		6D6D9EBA13AA70DA00B9B0BB /* ExampleSentencesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6D9EB913AA70DA00B9B0BB /* ExampleSentencesView.m */; };
+		6D6D9EBD13AA70E600B9B0BB /* ExampleSentencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6D9EBC13AA70E600B9B0BB /* ExampleSentencesController.m */; };
+		6D7E6F9C17467CA600A1848A /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D7E6F9B17467CA600A1848A /* Default-Portrait@2x~ipad.png */; };
+		6D7E6F9F174689C700A1848A /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D7E6F9E174689C600A1848A /* Default-Landscape@2x~ipad.png */; };
+		6D7E6FA017468A1800A1848A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51DD1396DF910011A8D4 /* Default@2x.png */; };
+		6DA2188613863B450089C1E8 /* CategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2188513863B450089C1E8 /* CategoryView.m */; };
+		6DA2188913863B550089C1E8 /* CategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2188813863B550089C1E8 /* CategoryController.m */; };
+		6DA2C5DF1387948A007CB94A /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2C5DE1387948A007CB94A /* SearchView.m */; };
+		6DA2C5E213879496007CB94A /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2C5E113879496007CB94A /* SearchController.m */; };
 		6DAA68501380D241005CBF5D /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAA684F1380D241005CBF5D /* DataModel.m */; };
-		6DAA68531380EC27005CBF5D /* SpanEngDict.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6DAA68521380EC27005CBF5D /* SpanEngDict.sqlite */; };
 		6DAA68551380ECB4005CBF5D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAA68541380ECB4005CBF5D /* libsqlite3.0.dylib */; };
+		6DAE51D51396D9420011A8D4 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51CF1396D9420011A8D4 /* flash.png */; };
+		6DAE51D61396D9420011A8D4 /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51D01396D9420011A8D4 /* flash@2x.png */; };
+		6DAE51D71396D9420011A8D4 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51D11396D9420011A8D4 /* help.png */; };
+		6DAE51D81396D9420011A8D4 /* help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51D21396D9420011A8D4 /* help@2x.png */; };
+		6DAE51D91396D9420011A8D4 /* manage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51D31396D9420011A8D4 /* manage.png */; };
+		6DAE51DA1396D9420011A8D4 /* manage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51D41396D9420011A8D4 /* manage@2x.png */; };
+		6DAE51DC1396DF890011A8D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51DB1396DF890011A8D4 /* Default.png */; };
+		6DAE51E01396E0BD0011A8D4 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51DF1396E0BD0011A8D4 /* Default-Portrait~ipad.png */; };
+		6DAE51E21396E1970011A8D4 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE51E11396E1960011A8D4 /* Default-Landscape~ipad.png */; };
+		6DB3F7FE1388D397003896FC /* FlashCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3F7FD1388D397003896FC /* FlashCardController.m */; };
+		6DB3F8081388D497003896FC /* FlashCardStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3F8071388D497003896FC /* FlashCardStartView.m */; };
+		6DB4C67313901B2C0028293D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4C67113901B2C0028293D /* Localizable.strings */; };
+		6DB4C67513901B520028293D /* FlashCardCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4C67413901B520028293D /* FlashCardCardController.m */; };
+		6DB4C67713901DE90028293D /* FlashCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB4C67613901DE90028293D /* FlashCardView.m */; };
+		6DB4C67E139022E00028293D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4C67C139022E00028293D /* InfoPlist.strings */; };
+		6DB4C68013902B0D0028293D /* mainhelpes.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB4C67F13902B0D0028293D /* mainhelpes.html */; };
+		6DD0AB9E138592F00098F745 /* PartOfSpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0AB9D138592EF0098F745 /* PartOfSpeechController.m */; };
+		6DD0ABA2138593E30098F745 /* PartOfSpeechView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0ABA1138593E30098F745 /* PartOfSpeechView.m */; };
 		6DF0525313807C9F002814BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF0525213807C9F002814BC /* UIKit.framework */; };
 		6DF0525513807C9F002814BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF0525413807C9F002814BC /* Foundation.framework */; };
 		6DF0525713807C9F002814BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF0525613807C9F002814BC /* CoreGraphics.framework */; };
 		6DF0525B13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 6DF0525A13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h */; };
 		6DF0525D13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0525C13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.m */; };
 		6DF0526013807C9F002814BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0525F13807C9F002814BC /* main.m */; };
-		6DF0526713807C9F002814BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DF0526513807C9F002814BC /* InfoPlist.strings */; };
 		6DF0527213807D30002814BC /* DefinitionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0527113807D30002814BC /* DefinitionSet.m */; };
 		6DF0527D138083C3002814BC /* WordCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0527C138083C3002814BC /* WordCategory.m */; };
+		6DF957D41745572F001B1E27 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DF957D31745572F001B1E27 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,25 +70,66 @@
 		6D13BCBD138472500035F398 /* WordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordController.m; sourceTree = "<group>"; };
 		6D13BCBF138477240035F398 /* WordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordView.h; sourceTree = "<group>"; };
 		6D13BCC0138477240035F398 /* WordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordView.m; sourceTree = "<group>"; };
+		6D2A380813AC17C60048D346 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		6D2A380913AC17C60048D346 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		6D2A380A13AC17C60048D346 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		6D2A380B13AC17C60048D346 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		6D2A380C13AC17C60048D346 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6D2A380D13AC17C60048D346 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6D2A380E13AC17C60048D346 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		6D307D17138386090010C909 /* DefinitionSetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionSetsController.h; sourceTree = "<group>"; };
 		6D307D18138386090010C909 /* DefinitionSetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionSetsController.m; sourceTree = "<group>"; };
 		6D5C0E6113819DEE00A25E2B /* SpanishAppHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpanishAppHelp.h; sourceTree = "<group>"; };
 		6D5C0E6213819DEE00A25E2B /* SpanishAppHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpanishAppHelp.m; sourceTree = "<group>"; };
-		6D5C0E6413819E5900A25E2B /* flashcards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashcards.png; sourceTree = "<group>"; };
-		6D5C0E6513819E5900A25E2B /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		6D5C0E6713819E5900A25E2B /* mainhelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mainhelp.html; sourceTree = "<group>"; };
-		6D5C0E6813819E5900A25E2B /* manage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manage.png; sourceTree = "<group>"; };
-		6D5C0E6913819E5900A25E2B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
-		6D5C0E6A13819E5900A25E2B /* To-do.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "To-do.txt"; sourceTree = "<group>"; };
 		6D5C0E721381A47C00A25E2B /* ManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageController.h; sourceTree = "<group>"; };
 		6D5C0E731381A47C00A25E2B /* ManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageController.m; sourceTree = "<group>"; };
-		6D5C0E751381D53500A25E2B /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		6D5C0E771381D7A100A25E2B /* ManageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageView.h; sourceTree = "<group>"; };
 		6D5C0E781381D7A100A25E2B /* ManageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageView.m; sourceTree = "<group>"; };
+		6D68584813918040000E69A2 /* VocabMasterySpanEngDict.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = VocabMasterySpanEngDict.sqlite; sourceTree = "<group>"; };
+		6D6D9EB813AA70DA00B9B0BB /* ExampleSentencesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleSentencesView.h; sourceTree = "<group>"; };
+		6D6D9EB913AA70DA00B9B0BB /* ExampleSentencesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleSentencesView.m; sourceTree = "<group>"; };
+		6D6D9EBB13AA70E600B9B0BB /* ExampleSentencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleSentencesController.h; sourceTree = "<group>"; };
+		6D6D9EBC13AA70E600B9B0BB /* ExampleSentencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleSentencesController.m; sourceTree = "<group>"; };
+		6D76CE1213897060005B5988 /* FlashCardCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardCardController.h; sourceTree = "<group>"; };
+		6D7E6F9B17467CA600A1848A /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		6D7E6F9E174689C600A1848A /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		6D98321E1746DAA30034B409 /* SpanishandEnglishVocabApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SpanishandEnglishVocabApp.entitlements; sourceTree = "<group>"; };
+		6DA2188413863B450089C1E8 /* CategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryView.h; sourceTree = "<group>"; };
+		6DA2188513863B450089C1E8 /* CategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryView.m; sourceTree = "<group>"; };
+		6DA2188713863B550089C1E8 /* CategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryController.h; sourceTree = "<group>"; };
+		6DA2188813863B550089C1E8 /* CategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryController.m; sourceTree = "<group>"; };
+		6DA2C5DD1387948A007CB94A /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		6DA2C5DE1387948A007CB94A /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		6DA2C5E013879496007CB94A /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		6DA2C5E113879496007CB94A /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
 		6DAA684E1380D241005CBF5D /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		6DAA684F1380D241005CBF5D /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
-		6DAA68521380EC27005CBF5D /* SpanEngDict.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpanEngDict.sqlite; sourceTree = "<group>"; };
 		6DAA68541380ECB4005CBF5D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		6DAE51CF1396D9420011A8D4 /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
+		6DAE51D01396D9420011A8D4 /* flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@2x.png"; sourceTree = "<group>"; };
+		6DAE51D11396D9420011A8D4 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		6DAE51D21396D9420011A8D4 /* help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help@2x.png"; sourceTree = "<group>"; };
+		6DAE51D31396D9420011A8D4 /* manage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manage.png; sourceTree = "<group>"; };
+		6DAE51D41396D9420011A8D4 /* manage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "manage@2x.png"; sourceTree = "<group>"; };
+		6DAE51DB1396DF890011A8D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		6DAE51DD1396DF910011A8D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		6DAE51DF1396E0BD0011A8D4 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		6DAE51E11396E1960011A8D4 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		6DB3F7FC1388D397003896FC /* FlashCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardController.h; sourceTree = "<group>"; };
+		6DB3F7FD1388D397003896FC /* FlashCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardController.m; sourceTree = "<group>"; };
+		6DB3F8001388D3A8003896FC /* FlashCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardView.h; sourceTree = "<group>"; };
+		6DB3F8061388D497003896FC /* FlashCardStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashCardStartView.h; sourceTree = "<group>"; };
+		6DB3F8071388D497003896FC /* FlashCardStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardStartView.m; sourceTree = "<group>"; };
+		6DB4C67213901B2C0028293D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		6DB4C67413901B520028293D /* FlashCardCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardCardController.m; sourceTree = "<group>"; };
+		6DB4C67613901DE90028293D /* FlashCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashCardView.m; sourceTree = "<group>"; };
+		6DB4C67D139022E00028293D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		6DB4C67F13902B0D0028293D /* mainhelpes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mainhelpes.html; sourceTree = "<group>"; };
+		6DD0AB9C138592EF0098F745 /* PartOfSpeechController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartOfSpeechController.h; sourceTree = "<group>"; };
+		6DD0AB9D138592EF0098F745 /* PartOfSpeechController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartOfSpeechController.m; sourceTree = "<group>"; };
+		6DD0ABA0138593E30098F745 /* PartOfSpeechView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartOfSpeechView.h; sourceTree = "<group>"; };
+		6DD0ABA1138593E30098F745 /* PartOfSpeechView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartOfSpeechView.m; sourceTree = "<group>"; };
 		6DF0524E13807C9F002814BC /* SpanishandEnglishVocabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpanishandEnglishVocabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF0525213807C9F002814BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6DF0525413807C9F002814BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,12 +139,11 @@
 		6DF0525F13807C9F002814BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DF0526113807C9F002814BC /* SpanishandEnglishVocabApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpanishandEnglishVocabApp-Prefix.pch"; sourceTree = "<group>"; };
 		6DF0526313807C9F002814BC /* SpanishandEnglishVocabApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpanishandEnglishVocabApp-Info.plist"; sourceTree = "<group>"; };
-		6DF0526613807C9F002814BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Languages/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DF0527013807D30002814BC /* DefinitionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionSet.h; sourceTree = "<group>"; };
 		6DF0527113807D30002814BC /* DefinitionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionSet.m; sourceTree = "<group>"; };
 		6DF0527B138083C3002814BC /* WordCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordCategory.h; sourceTree = "<group>"; };
 		6DF0527C138083C3002814BC /* WordCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordCategory.m; sourceTree = "<group>"; };
-		6DF0527E13808638002814BC /* strings_to_be_localized.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = strings_to_be_localized.txt; sourceTree = "<group>"; };
+		6DF957D31745572F001B1E27 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +161,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D6D9EB713AA70B700B9B0BB /* ExampleSentences */ = {
+			isa = PBXGroup;
+			children = (
+				6D6D9EB813AA70DA00B9B0BB /* ExampleSentencesView.h */,
+				6D6D9EB913AA70DA00B9B0BB /* ExampleSentencesView.m */,
+				6D6D9EBB13AA70E600B9B0BB /* ExampleSentencesController.h */,
+				6D6D9EBC13AA70E600B9B0BB /* ExampleSentencesController.m */,
+			);
+			name = ExampleSentences;
+			sourceTree = "<group>";
+		};
+		6DA2187E13863AD20089C1E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6D5C0E771381D7A100A25E2B /* ManageView.h */,
+				6D5C0E781381D7A100A25E2B /* ManageView.m */,
+				6D5C0E721381A47C00A25E2B /* ManageController.h */,
+				6D5C0E731381A47C00A25E2B /* ManageController.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		6DA2188013863AF90089C1E8 /* DefinitionSets */ = {
+			isa = PBXGroup;
+			children = (
+				6D307D17138386090010C909 /* DefinitionSetsController.h */,
+				6D307D18138386090010C909 /* DefinitionSetsController.m */,
+				6D13BCB813846B170035F398 /* DefinitionSetsView.h */,
+				6D13BCB913846B170035F398 /* DefinitionSetsView.m */,
+			);
+			name = DefinitionSets;
+			sourceTree = "<group>";
+		};
+		6DA2188113863B100089C1E8 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				6D13BCBC138472500035F398 /* WordController.h */,
+				6D13BCBD138472500035F398 /* WordController.m */,
+				6D13BCBF138477240035F398 /* WordView.h */,
+				6D13BCC0138477240035F398 /* WordView.m */,
+			);
+			name = Words;
+			sourceTree = "<group>";
+		};
+		6DA2188213863B1F0089C1E8 /* PartOfSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				6DD0AB9C138592EF0098F745 /* PartOfSpeechController.h */,
+				6DD0AB9D138592EF0098F745 /* PartOfSpeechController.m */,
+				6DD0ABA0138593E30098F745 /* PartOfSpeechView.h */,
+				6DD0ABA1138593E30098F745 /* PartOfSpeechView.m */,
+			);
+			name = PartOfSpeech;
+			sourceTree = "<group>";
+		};
+		6DA2188313863B2F0089C1E8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2188413863B450089C1E8 /* CategoryView.h */,
+				6DA2188513863B450089C1E8 /* CategoryView.m */,
+				6DA2188713863B550089C1E8 /* CategoryController.h */,
+				6DA2188813863B550089C1E8 /* CategoryController.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		6DA2C5DC1387947D007CB94A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2C5DD1387948A007CB94A /* SearchView.h */,
+				6DA2C5DE1387948A007CB94A /* SearchView.m */,
+				6DA2C5E013879496007CB94A /* SearchController.h */,
+				6DA2C5E113879496007CB94A /* SearchController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		6DB4C67B139022E00028293D /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6DB4C67C139022E00028293D /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = Languages/en.lproj;
+			sourceTree = "<group>";
+		};
+		6DD48B28138F7BEF00532531 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6DB4C67113901B2C0028293D /* Localizable.strings */,
+			);
+			name = es.lproj;
+			path = Languages/es.lproj;
+			sourceTree = "<group>";
+		};
 		6DF0524313807C9F002814BC = {
 			isa = PBXGroup;
 			children = (
-				6DAA68541380ECB4005CBF5D /* libsqlite3.0.dylib */,
+				6D7E6F9E174689C600A1848A /* Default-Landscape@2x~ipad.png */,
+				6D7E6F9B17467CA600A1848A /* Default-Portrait@2x~ipad.png */,
+				6DF957D31745572F001B1E27 /* Default-568h@2x.png */,
 				6DF0525813807C9F002814BC /* SpanishandEnglishVocabApp */,
 				6DF0525113807C9F002814BC /* Frameworks */,
 				6DF0524F13807C9F002814BC /* Products */,
@@ -114,6 +279,7 @@
 		6DF0525113807C9F002814BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DAA68541380ECB4005CBF5D /* libsqlite3.0.dylib */,
 				6DF0525213807C9F002814BC /* UIKit.framework */,
 				6DF0525413807C9F002814BC /* Foundation.framework */,
 				6DF0525613807C9F002814BC /* CoreGraphics.framework */,
@@ -124,6 +290,7 @@
 		6DF0525813807C9F002814BC /* SpanishandEnglishVocabApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D98321E1746DAA30034B409 /* SpanishandEnglishVocabApp.entitlements */,
 				6DF0525913807C9F002814BC /* Classes */,
 				6DF0525E13807C9F002814BC /* Other Sources */,
 				6DF0526213807C9F002814BC /* Resources */,
@@ -158,15 +325,27 @@
 		6DF0526213807C9F002814BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6D5C0E6413819E5900A25E2B /* flashcards.png */,
-				6D5C0E6513819E5900A25E2B /* help.png */,
+				6D2A380813AC17C60048D346 /* Icon-72.png */,
+				6D2A380913AC17C60048D346 /* Icon-Small-50.png */,
+				6D2A380A13AC17C60048D346 /* Icon-Small.png */,
+				6D2A380B13AC17C60048D346 /* Icon-Small@2x.png */,
+				6D2A380C13AC17C60048D346 /* Icon.png */,
+				6D2A380D13AC17C60048D346 /* Icon@2x.png */,
+				6D2A380E13AC17C60048D346 /* iTunesArtwork.png */,
+				6DAE51E11396E1960011A8D4 /* Default-Landscape~ipad.png */,
+				6DAE51DF1396E0BD0011A8D4 /* Default-Portrait~ipad.png */,
+				6DAE51DD1396DF910011A8D4 /* Default@2x.png */,
+				6DAE51DB1396DF890011A8D4 /* Default.png */,
+				6DAE51CF1396D9420011A8D4 /* flash.png */,
+				6DAE51D01396D9420011A8D4 /* flash@2x.png */,
+				6DAE51D11396D9420011A8D4 /* help.png */,
+				6DAE51D21396D9420011A8D4 /* help@2x.png */,
+				6DAE51D31396D9420011A8D4 /* manage.png */,
+				6DAE51D41396D9420011A8D4 /* manage@2x.png */,
+				6D68584813918040000E69A2 /* VocabMasterySpanEngDict.sqlite */,
 				6D5C0E6713819E5900A25E2B /* mainhelp.html */,
-				6D5C0E6813819E5900A25E2B /* manage.png */,
-				6D5C0E6913819E5900A25E2B /* search.png */,
-				6D5C0E6A13819E5900A25E2B /* To-do.txt */,
-				6DAA68521380EC27005CBF5D /* SpanEngDict.sqlite */,
 				6DF0526313807C9F002814BC /* SpanishandEnglishVocabApp-Info.plist */,
-				6DF0527E13808638002814BC /* strings_to_be_localized.txt */,
+				6DB4C67F13902B0D0028293D /* mainhelpes.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -174,7 +353,8 @@
 		6DF0526413807C9F002814BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DF0526513807C9F002814BC /* InfoPlist.strings */,
+				6DB4C67B139022E00028293D /* en.lproj */,
+				6DD48B28138F7BEF00532531 /* es.lproj */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -182,19 +362,13 @@
 		6DF0526D13807CE3002814BC /* Manage */ = {
 			isa = PBXGroup;
 			children = (
-				6D5C0E721381A47C00A25E2B /* ManageController.h */,
-				6D5C0E731381A47C00A25E2B /* ManageController.m */,
-				6D5C0E751381D53500A25E2B /* Test.xib */,
-				6D5C0E771381D7A100A25E2B /* ManageView.h */,
-				6D5C0E781381D7A100A25E2B /* ManageView.m */,
-				6D307D17138386090010C909 /* DefinitionSetsController.h */,
-				6D307D18138386090010C909 /* DefinitionSetsController.m */,
-				6D13BCB813846B170035F398 /* DefinitionSetsView.h */,
-				6D13BCB913846B170035F398 /* DefinitionSetsView.m */,
-				6D13BCBC138472500035F398 /* WordController.h */,
-				6D13BCBD138472500035F398 /* WordController.m */,
-				6D13BCBF138477240035F398 /* WordView.h */,
-				6D13BCC0138477240035F398 /* WordView.m */,
+				6D6D9EB713AA70B700B9B0BB /* ExampleSentences */,
+				6DA2C5DC1387947D007CB94A /* Search */,
+				6DA2188313863B2F0089C1E8 /* Category */,
+				6DA2187E13863AD20089C1E8 /* Manager */,
+				6DA2188013863AF90089C1E8 /* DefinitionSets */,
+				6DA2188113863B100089C1E8 /* Words */,
+				6DA2188213863B1F0089C1E8 /* PartOfSpeech */,
 			);
 			name = Manage;
 			sourceTree = "<group>";
@@ -202,6 +376,14 @@
 		6DF0526E13807CEF002814BC /* Flash cards */ = {
 			isa = PBXGroup;
 			children = (
+				6DB3F7FC1388D397003896FC /* FlashCardController.h */,
+				6DB3F7FD1388D397003896FC /* FlashCardController.m */,
+				6DB3F8061388D497003896FC /* FlashCardStartView.h */,
+				6DB3F8071388D497003896FC /* FlashCardStartView.m */,
+				6DB3F8001388D3A8003896FC /* FlashCardView.h */,
+				6DB4C67613901DE90028293D /* FlashCardView.m */,
+				6D76CE1213897060005B5988 /* FlashCardCardController.h */,
+				6DB4C67413901B520028293D /* FlashCardCardController.m */,
 			);
 			name = "Flash cards";
 			sourceTree = "<group>";
@@ -245,6 +427,7 @@
 		6DF0524513807C9F002814BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Nick Rasband";
 			};
 			buildConfigurationList = 6DF0524813807C9F002814BC /* Build configuration list for PBXProject "SpanishandEnglishVocabApp" */;
@@ -253,6 +436,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = 6DF0524313807C9F002814BC;
 			productRefGroup = 6DF0524F13807C9F002814BC /* Products */;
@@ -270,15 +454,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF0525B13807C9F002814BC /* SpanishandEnglishVocabAppAppDelegate.h in Resources */,
-				6DF0526713807C9F002814BC /* InfoPlist.strings in Resources */,
-				6DAA68531380EC27005CBF5D /* SpanEngDict.sqlite in Resources */,
-				6D5C0E6B13819E5900A25E2B /* flashcards.png in Resources */,
-				6D5C0E6C13819E5900A25E2B /* help.png in Resources */,
 				6D5C0E6E13819E5900A25E2B /* mainhelp.html in Resources */,
-				6D5C0E6F13819E5900A25E2B /* manage.png in Resources */,
-				6D5C0E7013819E5900A25E2B /* search.png in Resources */,
-				6D5C0E7113819E5900A25E2B /* To-do.txt in Resources */,
-				6D5C0E761381D53500A25E2B /* Test.xib in Resources */,
+				6DB4C67313901B2C0028293D /* Localizable.strings in Resources */,
+				6DB4C67E139022E00028293D /* InfoPlist.strings in Resources */,
+				6DB4C68013902B0D0028293D /* mainhelpes.html in Resources */,
+				6D68584913918040000E69A2 /* VocabMasterySpanEngDict.sqlite in Resources */,
+				6DAE51D51396D9420011A8D4 /* flash.png in Resources */,
+				6DAE51D61396D9420011A8D4 /* flash@2x.png in Resources */,
+				6DAE51D71396D9420011A8D4 /* help.png in Resources */,
+				6DAE51D81396D9420011A8D4 /* help@2x.png in Resources */,
+				6DAE51D91396D9420011A8D4 /* manage.png in Resources */,
+				6DAE51DA1396D9420011A8D4 /* manage@2x.png in Resources */,
+				6DAE51DC1396DF890011A8D4 /* Default.png in Resources */,
+				6DAE51E01396E0BD0011A8D4 /* Default-Portrait~ipad.png in Resources */,
+				6DAE51E21396E1970011A8D4 /* Default-Landscape~ipad.png in Resources */,
+				6D2A380F13AC17C60048D346 /* Icon-72.png in Resources */,
+				6D2A381013AC17C60048D346 /* Icon-Small-50.png in Resources */,
+				6D2A381113AC17C60048D346 /* Icon-Small.png in Resources */,
+				6D2A381213AC17C60048D346 /* Icon-Small@2x.png in Resources */,
+				6D2A381313AC17C60048D346 /* Icon.png in Resources */,
+				6D2A381413AC17C60048D346 /* Icon@2x.png in Resources */,
+				6D2A381513AC17C60048D346 /* iTunesArtwork.png in Resources */,
+				6DF957D41745572F001B1E27 /* Default-568h@2x.png in Resources */,
+				6D7E6F9C17467CA600A1848A /* Default-Portrait@2x~ipad.png in Resources */,
+				6D7E6F9F174689C700A1848A /* Default-Landscape@2x~ipad.png in Resources */,
+				6D7E6FA017468A1800A1848A /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,16 +501,36 @@
 				6D13BCBA13846B170035F398 /* DefinitionSetsView.m in Sources */,
 				6D13BCBE138472500035F398 /* WordController.m in Sources */,
 				6D13BCC1138477240035F398 /* WordView.m in Sources */,
+				6DD0AB9E138592F00098F745 /* PartOfSpeechController.m in Sources */,
+				6DD0ABA2138593E30098F745 /* PartOfSpeechView.m in Sources */,
+				6DA2188613863B450089C1E8 /* CategoryView.m in Sources */,
+				6DA2188913863B550089C1E8 /* CategoryController.m in Sources */,
+				6DA2C5DF1387948A007CB94A /* SearchView.m in Sources */,
+				6DA2C5E213879496007CB94A /* SearchController.m in Sources */,
+				6DB3F7FE1388D397003896FC /* FlashCardController.m in Sources */,
+				6DB3F8081388D497003896FC /* FlashCardStartView.m in Sources */,
+				6DB4C67513901B520028293D /* FlashCardCardController.m in Sources */,
+				6DB4C67713901DE90028293D /* FlashCardView.m in Sources */,
+				6D6D9EBA13AA70DA00B9B0BB /* ExampleSentencesView.m in Sources */,
+				6D6D9EBD13AA70E600B9B0BB /* ExampleSentencesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6DF0526513807C9F002814BC /* InfoPlist.strings */ = {
+		6DB4C67113901B2C0028293D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6DF0526613807C9F002814BC /* en */,
+				6DB4C67213901B2C0028293D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6DB4C67C139022E00028293D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB4C67D139022E00028293D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -318,17 +538,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6DF0526813807C9F002814BC /* Debug */ = {
+		6DE8845013975A290059EC41 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nicholas Rasband";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6D0F4DD1-3C06-42BF-8EED-29B34107E754";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		6DE8845113975A290059EC41 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = SpanishandEnglishVocabApp/SpanishandEnglishVocabApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		6DF0526813807C9F002814BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nicholas Rasband";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6D0F4DD1-3C06-42BF-8EED-29B34107E754";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,13 +606,19 @@
 		6DF0526913807C9F002814BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nicholas Rasband";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6D0F4DD1-3C06-42BF-8EED-29B34107E754";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -353,13 +628,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = SpanishandEnglishVocabApp/SpanishandEnglishVocabApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -368,12 +651,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = SpanishandEnglishVocabApp/SpanishandEnglishVocabApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SpanishandEnglishVocabApp/SpanishandEnglishVocabApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -386,6 +677,7 @@
 			buildConfigurations = (
 				6DF0526813807C9F002814BC /* Debug */,
 				6DF0526913807C9F002814BC /* Release */,
+				6DE8845013975A290059EC41 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -395,6 +687,7 @@
 			buildConfigurations = (
 				6DF0526B13807C9F002814BC /* Debug */,
 				6DF0526C13807C9F002814BC /* Release */,
+				6DE8845113975A290059EC41 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -63,8 +63,11 @@
 // Assigns a definition set to the default category
 - (void) moveDefinitionSetsToDefaultCategoryFromCategory:(int)catID; // CHECK
 
-// Adds a category to the dictionary
-- (void) addCategoryToDictionary:(NSString*)category;
+// Adds a category to the dictionary and returns its id.
+- (int) addCategoryToDictionary:(NSString*)category;
+
+// Updates the name of a given category
+- (void) updateCategoryNameTo:(NSString*)name withCategoryID:(int)categoryID;
 
 // Deletes a category from the dictionary
 - (void) deleteCategory:(int)catID;

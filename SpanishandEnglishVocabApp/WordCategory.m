@@ -42,6 +42,7 @@
 
 - (void) dealloc
 {
+    [_categoryName release];
     [super dealloc];
 }
 

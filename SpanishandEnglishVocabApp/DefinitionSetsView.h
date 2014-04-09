@@ -8,6 +8,7 @@
 
 @interface DefinitionSetsView : UIView 
 {
+    UITextField* _categoryTextField;
     UIButton* _button;
     UITableView* _tableView;
 }
@@ -15,11 +16,9 @@
 // Constructor
 - (id) initWithFrame:(CGRect)frame;
 
-// Methods
-- (void) layoutViews;
-
 // Properties
 - (UIButton*) button;
+- (UITextField*) categoryTextField;
 - (UITableView*) tableView;
 
 @end

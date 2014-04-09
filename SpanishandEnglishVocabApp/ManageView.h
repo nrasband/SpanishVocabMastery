@@ -9,18 +9,13 @@
 @interface ManageView : UIView 
 {
     UITextField* _textField;
-    UIButton* _button;
     UITableView* _tableView;
 }
 
 // Constructor
 - (id) initWithFrame:(CGRect)frame;
 
-// Methods
-- (void) layoutViews;
-
 // Properties
-- (UIButton*) button;
 - (UITextField*) textField;
 - (UITableView*) tableView;
 
